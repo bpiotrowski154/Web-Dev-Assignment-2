@@ -1,0 +1,71 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid #bbb;
+    width: 82%;
+    height: 20px;
+}
+.latest {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    height: 20px;
+    width: 40px;
+    font-size: 12px;
+}
+
+.marquee {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    height: 20px;
+}
+
+.latest p, .marquee p{
+    margin: 0;
+}
+
+.nba-logo {
+    height: 20px;
+    width: 15px;
+}
+
+.body {
+    display: flex;
+    width: 82%;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+
+.news-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 0 10px;
+}
+
+.news-date {
+    font-size: 13px;
+    color: gray;
+    margin: 20px 0 0 10px;
+}
+
+.news-details {
+    font-size: 17px;
+    line-height: 1.4;
+    margin: 20px 0 0 10px;
+}
+
+.lebron-image {
+    height: 200px;
+    width: 200px;
+    margin: 10px 10px 10px;
+}
