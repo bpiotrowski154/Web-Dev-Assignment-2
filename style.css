@@ -11,27 +11,38 @@
     align-items: flex-start;
     border: 1px solid #bbb;
     width: 82%;
-    height: 20px;
+    height: 30px;
 }
 .latest {
     background-color: blue;
     color: white;
     text-align: center;
     vertical-align: middle;
-    height: 20px;
-    width: 40px;
-    font-size: 12px;
+    height: 30px;
+    width: 50px;
+    font-size: 16px;
 }
 
-.marquee {
+.latest p{
+    margin: 5px 0 0 0;
+}
+
+.marquee-text {
     display: flex;
     flex-direction: row;
-    font-size: 12px;
-    height: 20px;
+    font-size: 16px;
+    height: 30px;
+    overflow: visible;
+    position: relative;
 }
 
-.latest p, .marquee p{
-    margin: 0;
+.marquee-text p, .marquee-text img{
+    margin: 5px 10px 5px 10px;
+}
+
+.marquee-text p:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .nba-logo {
@@ -64,8 +75,32 @@
     margin: 20px 0 0 10px;
 }
 
+.image-container{
+    position: relative;
+}
+
 .lebron-image {
     height: 200px;
     width: 200px;
     margin: 10px 10px 10px;
+}
+
+.overlay {  /*obtained and modified from https://www.w3schools.com/howto/howto_css_image_overlay_title.asp */
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.25); /* Black see-through */
+    color: #f1f1f1;
+    width: 200px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    margin: 10px 10px 14px;
+    padding: 10px 0px 10px;
+    text-align: center;
+}
+
+.image-container:hover .overlay{
+    opacity: 1;
 }
